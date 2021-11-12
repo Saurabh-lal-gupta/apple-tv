@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/searchbox.css"/>
+    <link rel="stylesheet" href="../css/loginsignup.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- header start -->
+  <!-- searchbox -->
+
+  <div id="header-cont">
+    <div id="header-logo">
+        <a id="col1" href="home.html"><img src="data:image/png;base64,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"/></a>
+    </div> 
+
+    <div id="signin">
+      <a  href="#" id="myBtn">Sign In
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+        </svg>
+      </a>
+    </div>
+   </div>
+     <hr id="header_hr"/>
+  
+<!-- latest releases -->
+
+<div id="bg-col">
+  <h3>Latest Releases</h3>
+<div id="image-display">
+   <div  class="container" id="img-div">
+    <a href="./video.html"><img class="image" id="img-size" src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/1478x832.webp"/></a>  
+    </div>
+    <div>
+      <p>DRAMA</p>
+      <p>A therapist (Paul Rudd) takes <br>over the life of his client (Will<br> Ferrel) in this incredible table</p>
+    </div>
+    
+
+    <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is5-ssl.mzstatic.com/image/thumb/4MH5IQWqpmFA6UQxPOcneQ/1478x832.webp"/> 
+     </div>
+     <div>
+       <p>KIDS & FAMILY</p>
+       <P>Blast off with Snoopy as he<br>fulfills his dream of becoming<br> a NASA astronaut</P>
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/1478x832.webp"/> 
+     </div>
+     <div>
+       <p>ADVENTURE</p>
+       <p>Take an unforgettable journey in<br>Tom Hanks' new thrill ride</p>
+     </div>
+    
+</div>
+</div>
+
+<div id="bg-col">
+  <h3>New Episode Available Now</h3>
+  <p>Jon explores guns-and how to keep them out of wrong hands.</p>
+<div id="image-display">
+   <div  class="container" id="img-div">
+     <img class="image" id="img-size" src="https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/91/ae/b9/91aeb9cd-4e0c-1706-2c3d-8bc1d46a872a/U0YtVFZBLVdXLVRoZV9Qcm9ibGVtX1dpdGhfSm9uX1N0ZXdhcnRfQnJpY2tfMS5sc3I.lsr/1478x832fe.webp"/> 
+    </div>
+  
+    <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is3-ssl.mzstatic.com/image/thumb/Features125/v4/41/3b/36/413b3651-197e-c044-6fb8-9d5ce83a9bac/U0YtVFZBLVdXLVRoZV9Qcm9ibGVtX1dpdGhfSm9uX1N0ZXdhcnRfQnJpY2tfMi5sc3I.lsr/1478x832fe.webp"/> 
+     </div>
+     
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is2-ssl.mzstatic.com/image/thumb/Features115/v4/07/7b/bd/077bbd9b-46dd-fb4f-cdca-fc2032f94ea9/U0YtVFZBLVdXLVRoZV9Qcm9ibGVtX1dpdGhfSm9uX1N0ZXdhcnRfQnJpY2tfMy5sc3I.lsr/1478x832fe.webp"/> 
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/8f/c0/db/8fc0dbfa-1ad8-8a6d-45ee-73db44e513ba/U0YtVFZBLVdXLVRoZV9Qcm9ibGVtX1dpdGhfSm9uX1N0ZXdhcnRfQnJpY2tfNC5sc3I.lsr/1478x832fe.webp"/> 
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is2-ssl.mzstatic.com/image/thumb/Features115/v4/84/52/0b/84520bef-6663-5d6e-0d28-a7898996f875/U0YtVFZBLVdXLVRoZV9Qcm9ibGVtX1dpdGhfSm9uX1N0ZXdhcnRfQnJpY2tfNS5sc3I.lsr/1478x832fe.webp"/> 
+     </div>
+     
+</div>
+</div>
+
+<div id="bg-col">
+  <h3>Drama Series</h3>
+<div id="image-display">
+   <div  class="container" id="img-div">
+     <img class="image" id="img-size" src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"/> 
+    </div>
+  
+    <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp"/> 
+     </div>
+     
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp"/> 
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is1-ssl.mzstatic.com/image/thumb/yXhlXOFkS9yJ1kMmOhfIbg/738x416.webp"/> 
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"/> 
+     </div>
+     
+</div>
+</div>
+
+<div id="bg-col">
+  <h3>The Shrink Next Door</h3>
+  <p>Will Ferell and paul Rudd star in a new series inspired by a true story</p>
+<div id="image-display">
+   <div  class="container" id="img-div">
+     <img class="image" id="img-size" src="https://is4-ssl.mzstatic.com/image/thumb/Features126/v4/4a/aa/51/4aaa5142-c180-23e4-71f5-5f26734335db/U0YtVFZBLVdXLVRoZV9TaHJpbmtfTmV4dF9Eb29yLUxhdW5jaC1Ccmljay0xLmxzcg.lsr/1478x832fe.webp"/> 
+    </div>
+  
+    <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is3-ssl.mzstatic.com/image/thumb/Features126/v4/79/14/74/791474cb-f467-4ba7-1472-00dc11c29597/U0YtVFZBLVdXLVRoZV9TaHJpbmtfTmV4dF9Eb29yLUxhdW5jaC1Ccmljay0yLmxzcg.lsr/1478x832fe.webp"/> 
+     </div>
+     
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is2-ssl.mzstatic.com/image/thumb/Features116/v4/aa/03/c2/aa03c2ab-96d6-19bd-acd3-9bcf627167ee/U0YtVFZBLVdXLVRoZV9TaHJpbmtfTmV4dF9Eb29yLUxhdW5jaC1Ccmljay0zLmxzcg.lsr/1478x832fe.webp"/> 
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is1-ssl.mzstatic.com/image/thumb/yXhlXOFkS9yJ1kMmOhfIbg/738x416.webp"/> 
+     </div>
+
+     <div  class="container" id="img-div">
+      <img class="image" id="img-size" src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"/> 
+     </div>
+     
+</div>
+</div>
+
+<!-- login and signup -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+    
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="register">
+      <div class="rectangle">
+     
+        <div class="button">
+          <button id="sign" onclick="signIn()">Sign In</button>
+          <button id="new" onclick="signUp()">Sign Up</button>
+        </div>
+        <hr />
+        <div class="input">
+          <form onsubmit="Register(event)" id="signup-form"><br/>
+            <input type="text" id="name" placeholder="Name" /><br/>
+            <input type="eamil" id="email" placeholder="Email" /><br/>
+            <input type="password" id="password" placeholder="Password" /><br/>
+            <input type="text" id="username" placeholder="Username" /><br/>
+            <input type="number" id="mobile" placeholder="Mobile" /><br/>
+            <input type="text" id="description" placeholder="Description" /><br/><br><br>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox" />
+              <label for="checkbox1"><b>Subscribe to our exclusive email offers</b></label>
+            </div>
+            <input id="submit" type="submit"/>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="login" style="display: none">
+      <div class="rectangle">
+        <div class="button">
+          <div class="button">
+            <button id="sign" onclick="signIn()">Sign In</button>
+            <button id="new" onclick="signUp()">Sign Up</button>
+          </div>
+        </div>
+        <hr />
+        <div class="input">
+          <form onsubmit="Login(event)" id="login-form">
+            <input type="text" id="user" placeholder="Username" /><br/>
+            <input type="password" id="pass" placeholder="Password" /><br/>
+           
+            <input id="sign-in" type="submit"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- login end -->
+
+<br/>
+<br/>
+<br/>
+
+<!-- footer part start -->
+
+
+<div id="gap"></div>
+ <hr/>
+
+
+ <div id="display-footer">
+
+  <div id="about">
+      <h3>ABOUT R+F</h3>
+      <p> <a id="col" href="#">PRESS ROOM</a></p>
+      <p><a id="col" href="#">COMPANY INFO</a></p>
+      <p><a id="col" href="#">EXECUTIVE TEAM</a></p>
+      <p><a id="col" href="#">CAREERS</a></p>
+      <p><a id="col" href="#">R+F RECYCLING PROGRAM</a></p>
+      <p><a id="col" href="#">BLOG</a></p>
+  </div>
+
+  <div id="help">
+      <h3>HELP</h3>
+      <p> <a id="col" href="#">PRODUCT & HELP CENTER</a></p>
+      <p><a id="col" href="#">SHIPPING</a></p>
+      <p><a id="col" href="#">SATISFACTION GUARANTEE</a></p>
+      <p><a id="col" href="#">PROMOTIONAL TERMS & CONDITIONS</a></p>
+      <p><a id="col" href="#">R+F FACTS</a></p>
+      <p><a id="col" href="#">KLARNA</a></p>
+      <p><a id="col" href="#">SITE MAP</a></p>
+  </div>
+
+
+ <div id="for_notification">
+  <div id="ft-noti">
+    <h3>LET’S KEEP IN TOUCH!</h3>
+    <input type="email"  id="notification" placeholder="Enter Your Email"><br/><br/>
+    <button onclick="keepintouch()" id="input-btn">Sign up</button><br>
+    <span class="providing">By providing my email, I accept <a href="#"> Rodan & Fields Privacy Policy</a></span><br/>
+  
+
+
+
+
+   <div id="icon-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg>
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg>
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+      </svg>
+
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+      </svg>
+
+   </div>
+
+</div>
+ </div>
+
+ </div>
+
+ <hr/>
+
+<div id="footer-disclaimer">
+
+  <a id="ft-col" href="#"><p>© 2021 Rodan & Fields</p></a>
+  <hr/>
+  <a id="ft-col" href="#"><p>Privacy Policy</p></a>
+  <hr/>
+  <a id="ft-col" href="#"><p>Terms & Conditions</p></a>
+  <hr/>
+  <a id="ft-col" href="#"><p>Accessibility</p></a>
+  <hr/>
+  <a id="ft-col" href="#"><p>California Supply Chains Act</p></a>
+  <hr/>
+  <a id="ft-col" href="#"><p>DSA Code Of Ethics</p></a>
+  <hr/>
+  <a id="ft-col" href="#"><p>Disclaimer</p></a>
+  <a id="ft-col" href="#"><p>Preference Center</p></a>
+</div>
+
+
+<!-- footer part end -->
+
+</body>
+</html>
+<script src="./scripts/home.js"></script>
+<script src="./scripts/loginsignup.js"></script>
+<script src="./scripts/foooter.js"></script>
